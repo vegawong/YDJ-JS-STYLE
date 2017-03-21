@@ -1,0 +1,26 @@
+{
+  "name": "yidejia-js-style",
+  "version": "1.0.0",
+  "description": "A mostly reasonable approach to JavaScript.",
+  "scripts": {
+    "preinstall": "cd packages/eslint-config-yidejia && npm prune && yarn",
+    "link:eslint": "cd packages/eslint-config-yidejia && yarn && yarn link",
+    "link:editorconfig": "ln -s $(pwd)/.editorconfig ~/.editorconfig",
+    "publish:base": "cd packages/eslint-config-yidejia && npm publish",
+    "publish:react": "cd packages/eslint-config-yidejia-react && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "style guide",
+    "lint",
+    "yidejia",
+    "es6",
+    "es2015",
+    "react",
+    "jsx"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "eslint-config-yidejia-react",
+  "version": "1.1.4",
+  "description": "yidejia's ESLint config, following our styleguide",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
+    "prepublish": "(in-install || eslint-find-rules -u -n) && (not-in-publish || npm test) && safe-publish-latest",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent tests-only",
+    "travis": "cd ../eslint-config-yidejia-base && npm install && npm link && cd - && npm link eslint-config-yidejia-base && npm run --silent test ; npm unlink eslint-config-yidejia-base >/dev/null &"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "yidejia",
+    "javascript",
+    "styleguide"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.0.0",
+    "babel-tape-runner": "^2.0.1",
+    "eslint": "^3.5.0",
+    "eslint-find-rules": "^1.13.1",
+    "in-publish": "^2.0.0",
+    "react": ">= 0.13.0",
+    "safe-publish-latest": "^1.0.1",
+    "tape": "^4.6.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.5.0"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "dependencies": {
+    "eslint-config-yidejia": "^1.1.1",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.2.1"
+  }
+}
