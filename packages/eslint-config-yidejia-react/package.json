@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yidejia-react",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "yidejia's ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,8 @@
     "tape": "^4.6.0"
   },
   "peerDependencies": {
-    "eslint": "^3.5.0"
+    "eslint": "^3.5.0",
+    "eslint-plugin-import": "^2.2.0"
   },
   "engines": {
     "node": ">= 6"
@@ -42,7 +43,6 @@
   },
   "dependencies": {
     "eslint-config-yidejia": "^1.1.1",
-    "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.2.1"
   }
