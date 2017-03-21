@@ -1,10 +1,10 @@
 {
-  "name": "yidejia-js-style",
+  "name": "ydj-js-style",
   "version": "1.0.0",
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
-    "preinstall": "cd packages/eslint-config-yidejia && npm prune && yarn",
-    "link:eslint": "cd packages/eslint-config-yidejia && yarn && yarn link",
+    "preinstall": "cd packages/eslint-config-yidejia && npm prune && npm i",
+    "link:eslint": "cd packages/eslint-config-yidejia && npm i && npm link",
     "link:editorconfig": "ln -s $(pwd)/.editorconfig ~/.editorconfig",
     "publish:base": "cd packages/eslint-config-yidejia && npm publish",
     "publish:react": "cd packages/eslint-config-yidejia-react && npm publish"
@@ -16,6 +16,7 @@
   "keywords": [
     "style guide",
     "lint",
+    "eslint",
     "yidejia",
     "es6",
     "es2015",

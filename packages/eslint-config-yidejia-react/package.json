@@ -36,6 +36,10 @@
   "engines": {
     "node": ">= 6"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vega-wong/YDJ-JS-STYLE.git"
+  },
   "dependencies": {
     "eslint-config-yidejia": "^1.1.1",
     "eslint-plugin-import": "^1.15.0",

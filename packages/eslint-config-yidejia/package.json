@@ -37,5 +37,9 @@
   },
   "engines": {
     "node": ">= 6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vega-wong/YDJ-JS-STYLE.git"
   }
 }
