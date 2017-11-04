@@ -1,6 +1,8 @@
+// @ts-nocheck
+
 module.exports = {
-  rules: {
+    rules: {
     // babel inserts `'use strict';` for us
-    strict: ['error', 'never']
-  }
+        strict: ['error', 'never']
+    }
 };
