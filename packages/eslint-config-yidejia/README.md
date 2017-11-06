@@ -1,4 +1,9 @@
 # eslint-config-yidejia
+PSA: this repo has been moved into `eslint-config-ydj` --> (https://www.npmjs.com/package/eslint-config-ydj)[https://www.npmjs.com/package/eslint-config-ydj]
+
+# PS: this package is `deprecated`
+  
+
 
 ## usage
 
